@@ -1,5 +1,6 @@
 # proyecto
 
+
 El proyecto es acerca de hacer una lista de items:
 
 Inicialmente debe tener: 
@@ -38,3 +39,4 @@ Inicialmente debe tener:
 
 
 ( Los documentos con este (* ) item, indican que son cosas a hacer más adelante para ir mejorando el proyecto)
+
