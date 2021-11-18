@@ -30,6 +30,7 @@ Inicialmente debe tener:
       º Código propio rehecho a nuestro conocimiento actual
       º Dependiendo de quien tome este proyecto, que esa persona decida si usar Evenlisteners, Javascript Validation, PHP, etc, pero que sea claro y se entienda
     - HTML que tenga
+    
       ºPuedo dar la funcion a los botones con Doom Events, Doom Evenlisteners  o como ya aprendimos en clase.
       ºTiene que tener un campo inner para ingresar la tarea
       ºTiene que tener un campo select para seleccionar la categoría
