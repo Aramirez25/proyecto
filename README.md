@@ -4,8 +4,10 @@
 El proyecto es acerca de hacer una lista de items:
 
 Inicialmente debe tener: 
+
+PARA FORMULARIOS (Clases e ids en español y con camel case)
  
- 1) Formulario de ingreso a la lista
+ 1) Formulario de ingreso a la lista 
     - Con usuario y contraseña 
     - Que indique cuando ingresas mal el usuario o contraseña 
     - Si olvidas contraseña que te la envie al mail * (Base de datos)
