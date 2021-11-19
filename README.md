@@ -5,7 +5,7 @@ El proyecto es acerca de hacer una lista de items:
 
 Inicialmente debe tener: 
 
-PARA FORMULARIOS (Clases e ids en español y con camel case)
+PARA FORMULARIOS (Clases e ids en español y con camel case - font awesome para los iconos o logo)
  
  1) Formulario de ingreso a la lista 
     - Con usuario y contraseña 
