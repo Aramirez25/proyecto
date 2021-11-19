@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario para inicio de la lista TO DO</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./index.js"></script>
 </head>
 <body>
+    <div class="cFormulario">
+        <form class="myForm" name="myForm" action="" onsubmit="return validateForm()" method="post">
+            Usuario: <input type="text" name="fname">
+            <div id="errorUsuario">Error de usuario</div>
+            Contraseña: <input type="password" name="psw" id="">
+            <div id="errorContra">Error de contraseña</div>
+            <span>
+            <i class="fas fa-feather-alt"></i>
+            </span>
+            <p class="contenedor_boton">
+                <input type="submit" class="boton" id="boton">
+            </p>
+            <div>Olvido su contraseña</div>
+        </form>
+
+    </div>
     
 </body>
 </html>
