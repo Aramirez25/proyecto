@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    border: 1px solid #fafafa;
 }
 
 @font-face {
@@ -15,12 +16,38 @@ body{
     background-color: #ACFCC5;
 }
 
+.containerLogo{
+    text-align: center;
+    margin: 20px;
+}
 
+.fa-feather-alt{
+    font-size: 200px;
+    background-color: white;
+
+}
 
 .myForm{
     padding: 20px;
-    margin: 200px 450px;
+    margin: auto;
+    max-width: 300px;
     border: 2px solid #F841BE;
     border-radius: 5px;
     background-color: #FCACE3;
+}
+.myForm input{
+    display: block;
+    width: 100%;
+}
+
+@media only screen and (min-width: 767px){
+    .containerLogo{
+    margin-top: 200px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .containerLogo{
+    margin-top: 100px;
+    }
 }

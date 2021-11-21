@@ -7,19 +7,23 @@
     <title>Formulario para inicio de la lista TO DO</title>
     <link rel="stylesheet" href="./css/index.css">
     <script src="./index.js"></script>
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
 </head>
 <body>
+    <div class="containerLogo">
+        
+        <i class="fas fa-feather-alt"></i>
+        
+    </div>
     <div class="cFormulario">
         <form class="myForm" name="myForm" action="" onsubmit="return validateForm()" method="post">
-            Usuario: <input type="text" name="fname">
+            <p>Usuario: <input type="text" name="fname"></p>
             <div id="errorUsuario">Error de usuario</div>
-            Contraseña: <input type="password" name="psw" id="">
+            <p>Contraseña: <input type="password" name="psw" id=""></p>
             <div id="errorContra">Error de contraseña</div>
-            <span>
-            <i class="fas fa-feather-alt"></i>
-            </span>
+            
             <p class="contenedor_boton">
-                <input type="submit" class="boton" id="boton">
+                <button type="submit" class="boton" id="boton">Enviar</button>
             </p>
             <div>Olvido su contraseña</div>
         </form>
