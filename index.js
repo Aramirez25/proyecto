@@ -18,14 +18,14 @@ else{
                 document.getElementById("errorUsuario").style.display="none";
             }
         if(contraseña != "teamomami"){
-            document.getElementById("errorContraseña").style.display="block";
+            document.getElementById("errorContra").style.display="block";
         }
             else{
-                document.getElementById("errorContraseña").style.display="none";
+                document.getElementById("errorContra").style.display="none";
             }
             intentos ++;
             
-            document.getElementById("n_intentos").innerHTML = "Te quedan " + (max_intentos - intentos) + "intentos";
+            document.getElementById("n_intentos").innerHTML = "Te quedan " + (max_intentos - intentos) + " intentos";
 
         }
         else{
@@ -36,4 +36,3 @@ else{
 
 
 
-}
