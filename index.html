@@ -16,19 +16,27 @@
         
     </div>
     <div class="cFormulario">
-        <form class="myForm" name="myForm" action="" onsubmit="return validateForm()" method="post">
-            <p>Usuario: <input type="text" name="fname"></p>
-            <div id="errorUsuario">Error de usuario</div>
-            <p>Contraseña: <input type="password" name="psw" id=""></p>
-            <div id="errorContra">Error de contraseña</div>
-            
+        <form class="myForm" name="myForm" id="formulario">
+
+            <label for="user">Usuario: </label>
+            <input type="text" name="user" id="user">
+            <p class= "usuarioError" id="errorUsuario">Error de usuario</p>
+
+            <label for="passw">Contraseña</label>
+            <input type="password" name="passw" id="passw">
+            <p class="contraError" id="errorContra">Error de contraseña</p>
+                        
+            <p>Olvido su contraseña: <a href="#">click aquí</a></p>
+
+            <p id="n_intentos"></p>
+            <p id="respuesta"></p>
+
             <p class="contenedor_boton">
-                <button type="submit" class="boton" id="boton">Enviar</button>
+                <a href="#" id="submit" onclick="entrar1()">Entrar</a>
             </p>
-            <div>Olvido su contraseña</div>
         </form>
 
     </div>
-    
+    <div id="mensaje">To Do list </div>
 </body>
 </html>
