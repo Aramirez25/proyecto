@@ -10,6 +10,7 @@
 }
 
 
+
 body{
 
     font-family: "roboto";
@@ -27,6 +28,13 @@ body{
 
 }
 
+.cFormulario{
+    display: none;
+}
+
+.container{
+    display: none;
+}
 .myForm{
     padding: 20px;
     margin: auto;

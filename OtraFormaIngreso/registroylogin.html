@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro y Log in</title>
+    <link rel="stylesheet" href="./css/registroylogin.css">
+    <script src="./registroylogin.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="tab">
+            <div class="tabLink" id="loginTab" data-form-id="login" >Login</div>
+            <div class="tabLink" id="signupTab" data-form-id="signup">Sign up</div>
+        </div>
+        <div class="tabContainer" id="login">
+            <form>
+                <label for="loginUser">User: </label>
+                <input required type="text" id="loginUser" placeholder="little24">
+                <label for="loginPassword">Password: </label>
+                <input required type="password" id="loginPassword" placeholder="********">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="tabContainer" id="signup">
+            <form>
+                <label for="signupEmail">Email: </label>
+                <input required type="email" id="signupEmail" placeholder="you@example.com">
+                <label for="signupPassword">Password: </label>
+                <input required type="password" id="signupPassword" placeholder="********">
+                <label for="singupConfirmPassword">Confirm Password: </label>
+                <input required type="password" id="singupConfirmPassword" placeholder="********">
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

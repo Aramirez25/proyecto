@@ -1,0 +1,107 @@
+
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+body{
+    margin: 0 auto;
+    font-family: "roboto", sans-serif;
+    font-weight: bolder;
+}
+
+div.container{
+    margin: 4em auto 2em auto;
+    padding: 1em;
+    overflow: hidden;
+    border: 2px solid black;
+}
+
+div.container label,
+div.container input,
+div.container button{
+    display: block;
+    width: 80%;
+    font-size: 1em;
+}
+
+div.container label{
+    margin: 0.5em auto 0.5em auto;
+}
+div.container input{
+    padding: 0.8em 0 0.8em 0.8em;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid purple;
+}
+
+div.container button{
+    outline: none;
+    margin: 2em auto 1em auto;
+    padding: 1.2em;
+    cursor: pointer;
+    letter-spacing: 0.2em;
+    box-shadow: 0 0 2px 2px rgb(231, 226, 226);
+    background-color: rgb(49, 48, 48);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.tab{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+
+.tabLink{
+    padding: 1em 0 1em 0;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    border: 0.4px solid rgb(66, 0, 128);
+    transition: all 0.2s linear;
+}
+.active{
+    animation-name: activetab;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    background-color: #0F2CAE;
+    color: black;
+}
+
+@keyframes activetab{
+    from{
+        transform: rotateY(180deg);
+    }
+    to{
+        transform: rotateY(0deg);
+    }
+}
+
+.tabContainer {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    display: none;
+    padding: 2em 0 2em 0;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 1224px) {
+    div.container {
+        overflow: hidden;
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 1824px) {
+    div.container {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    div.container {
+        width: 80%;
+    }
+}
