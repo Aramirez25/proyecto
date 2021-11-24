@@ -6,7 +6,7 @@
 
 body{
     margin: 0 auto;
-    font-family: "roboto", sans-serif;
+    font-family: "roboto";
     font-weight: bolder;
 }
 
@@ -33,6 +33,7 @@ div.container input{
     outline: none;
     border: none;
     border-bottom: 2px solid purple;
+    margin: 0.5em auto 0.5em auto;
 }
 
 div.container button{
@@ -71,10 +72,10 @@ div.container button{
 }
 
 @keyframes activetab{
-    from{
+    from {
         transform: rotateY(180deg);
     }
-    to{
+    to {
         transform: rotateY(0deg);
     }
 }
