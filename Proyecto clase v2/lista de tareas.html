@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3943ac4422.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tareas</title>
+
+</head>
+
+<body>
+    <!-- TITULO -->
+    <header>
+        <h1>Lista de Tareas</h1>
+    </header>
+    <!-- INPUT FIELD PARA INTRODUCIR TAREAS Y FILTRO DESPLEGABLE -->
+    <section class="container">
+        <div class="form-container">
+            <form>
+                <input type="text" placeholder="Introduce una tarea" class="tarea_input" />
+                <button class="tarea_button" type="submit">
+                    <i class="far fa-plus-square"></i>
+                </button>
+            </form>
+            <div class="select">
+                <select name="tareas" class="filtrar_tareas">
+                    <option value="all">Todas</option>
+                    <option value="completed">Completadas</option>
+                    <option value="uncompleted">Sin completar</option>
+                </select>
+            </div>
+        </div>
+    
+        <!-- CONTAINER PARA MOSTRAR LISTA AÑADIENDO TAREAS DINAMICAMENTE CON JS -->
+        <div class="container_lista">
+            <ul class="lista_tareas"></ul>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
