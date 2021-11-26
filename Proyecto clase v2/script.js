@@ -7,7 +7,7 @@ const filtrarOpciones = document.querySelector(".filtrar_tareas");
 // Event Listeners
 tareaButton.addEventListener("click", añadeTarea);
 listaTareas.addEventListener("click", borraCheck);
-filtrarOpciones.addEventListener("click", filtrarTareas);
+filtrarOpciones.addEventListener("change", filtrarTareas);
 
 // Funciones
 function añadeTarea(e) {
@@ -63,7 +63,7 @@ function borraCheck(e) {
 // Filtrar tareas segun opciones
 function filtrarTareas(e) {
   const tareas = listaTareas.childNodes;
-  for (let i = 1; i < tareas.length; i++) {
+  for (let i = 0; i < tareas.length; i++) {
     switch (e.target.value) {
       case "all":
         tareas[i].style.display = "flex";
