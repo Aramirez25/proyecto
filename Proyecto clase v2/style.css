@@ -16,6 +16,39 @@ body {
   background: -webkit-linear-gradient(left, #23a6d5, #23d5ab);
 }
 
+.sidebar{
+  position: fixed;
+  top: 0rem;
+  left: -10rem;
+  height: 100vh;
+  transition: 600ms all;
+  display:flex;
+  align-items: flex-start;
+}
+
+.sidebar ul{  
+  width: 10rem;
+  align-self: stretch;
+  background-color: #fb91a3e0;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 50%);
+}
+
+.sidebar .btn{
+  padding:.5rem;
+  font-size:1.4rem;
+}
+
+.sidebar .btn:hover{
+  cursor:pointer;
+}
+
+.open
+{
+  left: 0rem;
+}
+.cerrar{
+  display: none;
+}
 /* Input element y buton submit con evento */
 header {
   height: 20vh;

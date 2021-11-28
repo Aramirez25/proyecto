@@ -13,14 +13,40 @@
 </head>
 
 <body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <div class="btn" id="sidebarbtn">
+        <span class="burger"> 
+            <svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;" fill="none" viewBox="0 0 24 24" stroke="white">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </span>
+        <span class="cerrar">
+            <svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;" fill="none" viewBox="0 0 24 24" stroke="white">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+        </span>
+        </div>
+    </div>
     <!-- TITULO -->
     <header>
         <h1>Lista de Tareas</h1>
     </header>
+
     <!-- INPUT FIELD PARA INTRODUCIR TAREAS Y FILTRO DESPLEGABLE -->
     <section class="container">
         <div class="form-container">
             <form>
+                <select name="categoria" id="categoria">
+                    <option value="Comida">Comida</option>
+                    <option value="Ropa">Ropa</option>
+                </select>
                 <input type="text" placeholder="Introduce una tarea" class="tarea_input" />
                 <button class="tarea_button" type="submit">
                     <i class="far fa-plus-square"></i>
@@ -31,6 +57,8 @@
                     <option value="all">Todas</option>
                     <option value="completed">Completadas</option>
                     <option value="uncompleted">Sin completar</option>
+                    <option value="Comida">Comida</option>
+                    <option value="Ropa">Ropa</option>
                 </select>
             </div>
         </div>

@@ -3,11 +3,18 @@ const tareaInput = document.querySelector(".tarea_input");
 const tareaButton = document.querySelector(".tarea_button");
 const listaTareas = document.querySelector(".lista_tareas");
 const filtrarOpciones = document.querySelector(".filtrar_tareas");
+const sidebar = document.querySelector(".sidebar");
+const botonSidebar = document.querySelector("#sidebarbtn");
+const botonBurger = document.querySelector(".burger");
+const botonCerrar = document.querySelector(".cerrar");
+const selectCategoria = document.querySelector("#categoria");
 
 // Event Listeners
 tareaButton.addEventListener("click", añadeTarea);
 listaTareas.addEventListener("click", borraCheck);
 filtrarOpciones.addEventListener("change", filtrarTareas);
+botonSidebar.addEventListener("click", toggleSidebar);
+
 
 // Funciones
 function añadeTarea(e) {
@@ -17,10 +24,11 @@ function añadeTarea(e) {
   //Tarea div
   const tareaDiv = document.createElement("div");
   tareaDiv.classList.add("tarea");
+  tareaDiv.classList.add(selectCategoria.value);
 
   //Tarea li
   const nuevaTarea = document.createElement("li");
-  nuevaTarea.innerText = tareaInput.value;
+  nuevaTarea.innerText = selectCategoria.value + " | " +tareaInput.value;
   nuevaTarea.classList.add("tarea_item");
   tareaDiv.appendChild(nuevaTarea);
   if (tareaInput.value === "") {
@@ -82,6 +90,33 @@ function filtrarTareas(e) {
           tareas[i].style.display = "none";
         }
         break;
+      case "Comida":
+        if (tareas[i].classList.contains("Comida")) {
+          tareas[i].style.display = "flex";
+        } else {
+          tareas[i].style.display = "none";
+        }
+        break;
+        case "Ropa":
+          if (tareas[i].classList.contains("Ropa")) {
+            tareas[i].style.display = "flex";
+          } else {
+            tareas[i].style.display = "none";
+          }
+          break;
     }
   }
+}
+// Mostrar u ocultar sidebar
+function toggleSidebar(){
+  sidebar.classList.toggle("open");
+  if(sidebar.classList.contains("open")){
+    botonBurger.style.display = "none";
+    botonCerrar.style.display = "block";
+  }
+  else{
+    botonBurger.style.display = "block";
+    botonCerrar.style.display = "none";
+  }
+
 }
