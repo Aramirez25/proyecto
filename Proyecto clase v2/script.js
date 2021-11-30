@@ -104,6 +104,13 @@ function filtrarTareas(e) {
             tareas[i].style.display = "none";
           }
           break;
+          case "Varios":
+          if (tareas[i].classList.contains("Varios")) {
+            tareas[i].style.display = "flex";
+          } else {
+            tareas[i].style.display = "none";
+          }
+          break;
     }
   }
 }

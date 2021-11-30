@@ -24,6 +24,7 @@ body {
   transition: 600ms all;
   display:flex;
   align-items: flex-start;
+  color: rgb(255, 255, 255);
 }
 
 .sidebar ul{  
