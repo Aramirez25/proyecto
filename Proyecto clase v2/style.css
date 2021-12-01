@@ -57,6 +57,9 @@ body {
 .cerrar{
   display: none;
 }
+form .select1{
+  margin-right: 5px;
+}
 /* Input element y buton submit con evento */
 header {
   height: 20vh;
@@ -68,7 +71,7 @@ header {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  /*justify-content: flex-start;*/
 }
 
 .form-container {
@@ -196,6 +199,7 @@ select {
 select,
 option {
   font-weight: bold;
+  
 }
 
 .select::after {
