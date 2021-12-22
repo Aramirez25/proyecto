@@ -3,7 +3,7 @@
 	$errors = "";
 
 	// connect to database
-	$db = mysqli_connect("localhost:8080", "root", "", "to_do");
+	$db = mysqli_connect("localhost", "root", "", "to_do");
 
 	// insert a quote if submit button is clicked
 	if (isset($_POST['submit'])) {
@@ -33,5 +33,30 @@
 		<input type="text" name="task" class="task_input">
 		<button type="submit" name="submit" id="add_btn" class="add_btn">Add Task</button>
 	</form>
+	<table>
+	<thead>
+		<tr>
+			<th>N</th>
+			<th>Tasks</th>
+			<th style="width: 60px;">Action</th>
+		</tr>
+	</thead>
+
+	<tbody>
+		<?php 
+		// select all tasks if page is visited or refreshed
+		$tasks = mysqli_query($db, "SELECT * FROM tasks");
+
+		$i = 1; while ($row = mysqli_fetch_array($tasks)) { ?>
+			<tr>
+				<td> <?php echo $i; ?> </td>
+				<td class="task"> <?php echo $row['task_tasks']; ?> </td>
+				<td class="delete"> 
+					<a href="index.php?del_task=<?php echo $row['id_tasks'] ?>">x</a> 
+				</td>
+			</tr>
+		<?php $i++; } ?>	
+	</tbody>
+</table>
 </body>
 </html>
