@@ -27,7 +27,7 @@ if (isset($_GET['del_task'])) {
 <html>
 <head>
 	<title>To Do with PHP and MySQL</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<div class="heading">

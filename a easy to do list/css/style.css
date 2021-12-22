@@ -42,7 +42,12 @@ table {
 
 tr {
 	border-bottom: 1px solid #cbcbcb;
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+	
 }
+
 
 th {
 	font-size: 19px;
@@ -60,7 +65,7 @@ tr:hover {
 }
 
 .task {
-	text-align: left;
+	text-align: center;
 }
 
 .delete{
