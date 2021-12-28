@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   background: -webkit-linear-gradient(left, #23a6d5, #23d5ab);
 }
-
+/*Sidebar*/
 .sidebar{
   position: fixed;
   top: 0rem;
@@ -24,6 +24,7 @@ body {
   transition: 600ms all;
   display:flex;
   align-items: flex-start;
+  color: rgb(255, 255, 255);
 }
 
 .sidebar ul{  
@@ -31,6 +32,13 @@ body {
   align-self: stretch;
   background-color: #fb91a3e0;
   box-shadow: 0px 4px 10px rgb(0 0 0 / 50%);
+  padding: 20px 5px 10px 12px;
+}
+.sidebar ul li{
+  display:flex;
+  
+  align-items: flex-start;
+  border: 1px solid rgb(155, 155, 245);
 }
 
 .sidebar .btn{
@@ -49,6 +57,9 @@ body {
 .cerrar{
   display: none;
 }
+form .select1{
+  margin-right: 5px;
+}
 /* Input element y buton submit con evento */
 header {
   height: 20vh;
@@ -60,7 +71,7 @@ header {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  /*justify-content: flex-start;*/
 }
 
 .form-container {
@@ -188,6 +199,7 @@ select {
 select,
 option {
   font-weight: bold;
+  
 }
 
 .select::after {
