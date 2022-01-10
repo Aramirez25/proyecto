@@ -53,3 +53,4 @@ $pwd = $_POST['password'];
     }
     
 
+?>
