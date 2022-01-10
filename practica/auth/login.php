@@ -10,7 +10,7 @@ $contrasena = $_POST['contrasena'];
 new mysqli que viene a ser el nombre de la clase*/
 
     /*CONEXION*/
-$conexion = new mysqli ('localhost', 'root', '', 'pruebaapp');
+$conexion = new mysqli ('localhost', 'root', 'root', 'pruebaapp');
 
     /*PREPARAR*/
 try{
@@ -19,6 +19,7 @@ try{
     echo $BDerror->getMessage();
     header('../login/index.php?error=db_fail');
 }
+
  /*mysqli_sql_exception la primera linea indica el nombre de la clase que antes cree, el sql_exception proporciona
     diversa información acerca de los errores producidos durante un acceso a la base de datos.
     El getMessage obtiene el mensaje de error o de excepcion que queremos. Tenemos los errores en index.php del login
@@ -35,6 +36,7 @@ try{
 
 
     $consulta->bind_param('ss', $email, $contrasena);
+    
     /*Acá las 'ss' hacen referencia a los dos campos que son email y contraseña.
     El bind vincula los valores a los parámetros y la bd ejecuta la instrucción */
     if(!$consulta){

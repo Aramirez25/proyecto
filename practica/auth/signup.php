@@ -16,7 +16,7 @@ if($contrasena != $contrasenaR){
 
     /*Conexión con objetos*/
 
-    $conexion = new mysqli('localhost', 'root', '', 'pruebaapp');
+    $conexion = new mysqli('localhost', 'root', 'root', 'pruebaapp');
     try{
         /*Acá preparo la consulta que se va a hacer en la base de datos*/
         $consulta = $conexion->prepare("INSERT INTO usuarios (nombre, contrasena, email) VALUES (?, ?, ?)");
@@ -37,7 +37,7 @@ if($contrasena != $contrasenaR){
     */
     
 
-    $consulta->bind_param('sss', $usuario, $email, $contrasena);
+    $consulta->bind_param('sss', $usuario, $contrasena, $email);
     //Acá las 'sss' hacen referencia a los tres campos que son usuario, email y contraseña.
     //El bind vincula los valores a los parámetros y la bd ejecuta la instrucción 
     $consulta->execute();
