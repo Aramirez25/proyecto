@@ -2,6 +2,7 @@
 $errors = [
     "1062" => "Ese email ya existe",
     "1032" => "Contraseña no encaja",
+    "1045" => "Error de conexión a la base de datos",
     "password_not_match" => "La verificacion de contraseña ha fallado",
     "credentials_fail" => "Credenciales incorrectas",
     "db_fail" => "Error en la base de datos",
