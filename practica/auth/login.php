@@ -10,11 +10,12 @@ $contrasena = $_POST['contrasena'];
 new mysqli que viene a ser el nombre de la clase*/
 
     /*CONEXION*/
-$conexion = new mysqli ('localhost', 'root', 'root', 'pruebaapp');
+$conexion = new mysqli ('localhost', 'root', '', 'pruebaapp');
 
     /*PREPARAR*/
 try{
     $consulta = $conexion->prepare("SELECT * FROM usuarios WHERE `email` = ? AND `contrasena` = ?");
+
 }catch(mysqli_sql_exception $BDerror){
     echo $BDerror->getMessage();
     header('../login/index.php?error=db_fail');
@@ -49,6 +50,7 @@ try{
         $usuario = $consulta->get_result()->fetch_all(MYSQLI_ASSOC);
         /*Fetch all es que me busque todos los resultados luego de ser obtenidos y me los pase a un array asociativo */
 
+       
     /* 3. Si se encuentra:*/
         if(count($usuario) == 1){
             /* 1. Iniciar sesion*/

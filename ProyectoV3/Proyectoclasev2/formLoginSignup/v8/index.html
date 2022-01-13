@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3943ac4422.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tareas</title>
+
+</head>
+
+<body>
+    <section class="task_container">
+        <div class="task_content">
+            <div class="task_header">
+                <h2 class="list_title">Lista de tareas</h2>
+                <p class="task_count">Tareas pendientes 5</p>
+            </div>
+            <!-- FILTRO Y CATEGORIAS -->
+            <div class="categories_filter">
+                <select name="categories" class="select_categories">
+                    <option value="categories">Categorias</option>
+                    <option value="trabajo">Trabajo</option>
+                    <option value="ocio">Ocio</option>
+                </select>
+
+                <div name="state" class="filter_state">
+                    <input type="checkbox" class="styled-checkbox" id="all" name="all" value="all" checked>
+                    <label for="all">Todas</label>
+                    <input type="checkbox" class="styled-checkbox" id="completed" name="completed" value="completed">
+                    <label for="completed">Completadas</label>
+                    <input type="checkbox" class="styled-checkbox" id="uncompleted" name="uncompleted"
+                        value="uncompleted">
+                    <label for="uncompleted">Pendientes</label>
+                    <button class="btn filter" type="submit">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- INTRODUCIR TAREAS -->
+            <div class="create_task">
+                <form>
+                    <input type="text" placeholder="Introduce una tarea" class="new task" />
+                    <button class="btn task" type="submit">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- MOSTRAR TAREAS DE LISTA -->
+            <div class="list_container">
+                <ul class="tasks">
+                    <li> <input type="checkbox" id="task-1" />
+                        <label for="task-1">placeholder tarea</label>
+                    </li>
+                    <li> <input type="checkbox" id="task-2" />
+                        <label for="task-2"> placeholder tarea</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="delete_stuff">
+                <button class="btn delete">Eliminar Tareas Completadas</button>
+                <!-- <button class="btn delete">Borrar Lista</button> -->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SIDEBAR AND CARD USER -->
+    <section class="card_container">
+        <div class="card">
+            <div class="btn_logout">
+                <i class="fa fa-power-off" aria-hidden="true"></i>
+            </div>
+            <div class="content">
+                <div class="img">
+                    <!-- <img src="" alt=""> -->
+                </div>
+                <div class="details">
+                    <div class="user">Usuario</div>
+                </div>
+
+                <!-- CREAR LISTAS -->
+                <div class="friends">
+                    <h2 class="friend_list_title">Mis amigos</h2>
+
+                    <form action="">
+                        <input type="text" class="new search" placeholder="buscar amigos" />
+                        <button class="btn search">
+                            <!-- <i class="fa fa-plus" aria-hidden="true"></i> -->
+                            <i class="fas fa-search"></i>  
+                        </button>
+                    </form>
+
+                    <ul class="friend_list" id="friend">
+                        <li>amigo</li>
+                        <li>amigo2</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

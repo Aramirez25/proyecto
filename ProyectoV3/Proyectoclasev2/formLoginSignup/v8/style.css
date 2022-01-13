@@ -1,0 +1,293 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* list-style: none; */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: -webkit-linear-gradient(left, #23a6d5, #23d5ab);
+}
+
+/* BTN de toda la app */
+.btn {
+  cursor: pointer;
+  background: 0;
+  border: 0;
+  padding: 0;
+}
+
+.btn.search {
+  color: #23a6d5;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-left: 0.25em;
+  transition: 250ms ease-in;
+}
+
+.btn.search:hover {
+  opacity: 0.7;
+}
+
+.btn.task {
+  color: #23a6d5;
+  font-size: 1rem;
+  margin-left: 0.25em;
+  transition: 250ms ease-in;
+}
+
+.btn.task:hover {
+  opacity: 0.7;
+}
+
+.btn.filter {
+  color: #23a6d5;
+  font-size: 1rem;
+  font-weight: 900;
+  margin-left: 0.25em;
+  transition: 250ms ease-in;
+}
+
+.btn.filter:hover {
+  opacity: 0.7;
+}
+
+.btn.delete {
+  color: #000;
+  /* opacity: 0.7; */
+  font-size: 1rem;
+  font-weight: 900;
+  transition: color 200ms;
+}
+
+.btn.delete:hover {
+  opacity: 0.7;
+}
+
+/*LISTA TAREAS*/
+.task_container {
+  display: flex;
+  width: 80vh;
+  margin-top: 2.5vh;
+  padding: 0.8rem 0.8rem;
+  z-index: 99;
+}
+
+.task_container .task_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background: #fff;
+  padding: 0.8rem 0.8rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.task_content .task_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.2rem;
+}
+
+.task_content .categories_filter {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+}
+
+.categories_filter .filter_state [type="checkbox"] {
+  cursor: pointer;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.select_categories {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.task_content .create_task {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0.8rem;
+}
+
+
+.task_content .list_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+}
+
+.list_container .tasks {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0.5rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.list_container .tasks [type="checkbox"]{
+  cursor: pointer;
+}
+
+.tasks li:hover {
+  opacity: 0.7;
+}
+
+.task_content .delete_stuff {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  padding: 0.5rem 0.8rem;
+}
+
+.delete_stuff {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100%;
+}
+
+/* --------------------------------------------------*/
+
+/* CARD USER */
+.card_container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 2.5vh;
+  left: 0;
+  top: 0;
+  padding: 0.8rem 0.8rem;
+  z-index: 1;
+}
+
+.card_container .card {
+  width: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.card {
+  background: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.card .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card .content .img {
+  height: 8.5rem;
+  width: 8.5rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+  background: #23a6d5;
+  margin-bottom: 0.9rem;
+}
+
+.card .content .img img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card .content .user {
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #23a6d5;
+}
+
+.btn_logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.btn_logout {
+  color: #23a6d5;
+}
+
+.btn_logout:hover {
+  color: red;
+}
+
+/* CARD LISTA */
+.card .friends .friend_list_title {
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  font-weight: 600;
+  color: #23a6d5;
+}
+
+.card .friends .friend_list {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  list-style: none;
+  /* list-style: circle; */
+  padding: 0.5rem;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.friend_list li {
+  font-weight: 700;
+}
+
+.friend_list li:hover {
+  opacity: 0.7;
+}
+
+.new {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.25em;
+}
+
+/* Tarea completada
+.completedItem {
+  text-decoration: line-through;
+  opacity: 0.5;
+  transform: scale(0.96);
+} */

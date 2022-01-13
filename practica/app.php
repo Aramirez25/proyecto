@@ -2,12 +2,12 @@
 
 
 if(!isset($_SESSION['logueado'])){
-    header('Location: login/index.php');
+    header('Location: login1/index.php');
 }
 
 
 if(isset($_SESSION['logueado']) && $_SESSION['logueado'] != 1){
-    header('Location: login/index.php');
+    header('Location: login1/index.php');
 }
    // initialize errors variable
    $errors = "";
@@ -22,7 +22,7 @@ if(isset($_SESSION['logueado']) && $_SESSION['logueado'] != 1){
     <title>Holi boli</title>
 </head>
 <body>
-    <h1>Entrasteeeeee</h1>
+    <h1>Entrasteeeee</h1>
 
     <p><a href="auth/logout.php">salir</a></p>
 </body>

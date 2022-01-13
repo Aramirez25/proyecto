@@ -24,7 +24,7 @@ $errors = [
                 echo '<div style="color:red;">'.$errors[$_GET['error']].'</div>';
             }
         ?>
-    <form name="formularioL" action="../auth/login.php" method="post">
+    <form name="formularioL" action="../auth/login1.php" method="post">
         <div>
             <input name="email" type="email" placeholder="Email" required>
         </div>
